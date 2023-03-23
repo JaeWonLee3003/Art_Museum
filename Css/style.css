@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #2B211A;
+}
+
+.wrap{
+  width: 1920px;
+  height: 2000px;
+}
+header{
+  background-color: #453933;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  opacity: 80%;
+}
+
+.Slide-Wrap{
+  width: 100%;
+  height: 720px;
+}
+.Slide-Wrap>img{
+  width: 100%;
+}
+
+.Best5-Gallery{
+  width: 100%;
+  height: 425px;
+}
+
+.Best5-Painter{
+  width: 100%;
+  height: 425px;
+}
+.Best5-WrGallery{
+  width: 100%;
+  height: 425px;
+}
