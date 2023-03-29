@@ -1,45 +1,88 @@
-*{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
-body{
-  background-color: #2B211A;
+body {
+    background-color: #2B211A;
 }
 
-.wrap{
-  width: 1920px;
-  height: 2000px;
-}
-header{
-  background-color: #453933;
-  width: 100%;
-  height: 80px;
-  position: fixed;
-  display: flex;
-  opacity: 80%;
+a {
+    color: white;
 }
 
-.Slide-Wrap{
-  width: 100%;
-  height: 720px;
+.wrap {
+    width: 1920px;
+    height: 2000px;
 }
-.Slide-Wrap>img{
-  width: 100%;
+header {
+    background-color: #2B211A;
+    width: 100%;
+    height: 80px;
+    opacity: 80%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Best5-Gallery{
-  width: 100%;
-  height: 425px;
+.Slide-Wrap {
+    width: 100%;
+    height: 720px;
+}
+.Slide-Wrap > img {
+    width: 100%;
 }
 
-.Best5-Painter{
-  width: 100%;
-  height: 425px;
+.Best5-Gallery {
+    width: 100%;
+    height: 425px;
 }
-.Best5-WrGallery{
-  width: 100%;
-  height: 425px;
+
+.Best5-Painter {
+    width: 100%;
+    height: 425px;
+}
+.Best5-WrGallery {
+    width: 100%;
+    height: 425px;
+}
+
+.dropdown > a > p {
+    justify-content: center;
+}
+
+.dropdown {
+   
+    display: inline-block;
+    margin: 40px;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 250px;
+    z-index: 1;
+    /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    background-color: #f9f9f9;
+    min-width: 100px;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 12px;
+    padding: 12px 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ececec;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
