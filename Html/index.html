@@ -7,92 +7,110 @@
         <title>Document</title>
         <link rel="stylesheet" href="/Css/style.css">
         <script src="./js/jquery-1.12.3.js"></script>
-        <script>
-        $(document).ready(function(){
-            var cnt=1;
-            var margin_Left=-300;
-            setInterval(function(){
-                $('.slideWrap>ul').animate({'margin-left':margin_Left*cnt},function(){
-                    if(cnt!==2)
-                        cnt++;
-                    else{
-                        cnt=0;
-                    }
-                })  
-            },3000)
-        });
-        </script>
+
     </head>
     <body>
         <div class="wrap">
             <header>
 
-                
                 <div class="menu-wrap">
-                    <!-- (div>ul.menu.drop>(li>a[href="#"]{$menu}+ul.sub>li*4>a[href="#"]{$menu})*3)*5 -->
-            
+                    <!--
+                    (div>ul.menu.drop>(li>a[href="#"]{$menu}+ul.sub>li*4>a[href="#"]{$menu})*3)*5
+                    -->
+
                     <div>
                         <ul class="menu bg_drop">
                             <li>
                                 <a href="#">홈</a>
-                                <ul class="sub">
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
+                                <ul class="sub"></ul>
                             </li>
                             <li>
                                 <a href="#">Art</a>
                                 <ul class="sub">
-                                    <li><a href="#">최후의 만찬</a></li>
-                                    <li><a href="#">별이 빛나는 밤</a></li>
-                                    <li><a href="#">이삭 줍는 여인들</a></li>
+                                    <li>
+                                        <a href="#">최후의 만찬</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">별이 빛나는 밤</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">이삭 줍는 여인들</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">Painter</a>
                                 <ul class="sub">
-                                    <li><a href="#">레오나르도 다 빈치</a></li>
-                                    <li><a href="#">빈센트 반 고흐</a></li>                                    
-                                    <li><a href="#">장프랑수아 밀레</a></li>
+                                    <li>
+                                        <a href="#">레오나르도 다 빈치</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">빈센트 반 고흐</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">장프랑수아 밀레</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">Museum</a>
                                 <ul class="sub">
-                                    <li><a href="https://www.mmca.go.kr/">국립현대미술관</a></li>
-                                    <li><a href="https://sema.seoul.go.kr/">서울시립미술관</a></li>
-                                    <li><a href="https://art.busan.go.kr/index.nm">부산시립미술관</a></li>
+                                    <li>
+                                        <a href="https://www.mmca.go.kr/">국립현대미술관</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://sema.seoul.go.kr/">서울시립미술관</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://art.busan.go.kr/index.nm">부산시립미술관</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                         <div class="bg"></div>
-                        
+
                     </div>
                 </div>
 
-                
-
             </header>
+            <div class="block"></div>
             <div class="slideContainer">
                 <div class="slideWrap">
                     <ul>
-                    <div class="slide1">
-                        <img src="/Images/Slide1.png" alt="slide1">
-                    </div>
-                    <div class="slide2">
-                        <img src="/Images/Slide2.png" alt="slide1">
+                        <div class="slide1">
+                            <img src="/Images/Slide1.png" alt="slide1">
+                        </div>
+                        <div class="slide2">
+                            <img src="/Images/Slide2.png" alt="slide1">
 
-                    </div>
-                    <div class="slide3">
-                        <img src="/Images/Slide3.png" alt="slide1">
+                        </div>
+                        <div class="slide3">
+                            <img src="/Images/Slide3.png" alt="slide1">
 
-                    </ul>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="Content">
-                    <div class="Best5-Gallery"></div>
+
+                <div class="Content-Wrap">
+                    <div class="Best3-Gallery">
+
+                        <h1>Best 3 Art Gallery</h1>
+                        <p>세계 미술품 중 대표하여 3가지 작품을 표현함.</p>
+                        <div class="Art-Box">
+                            <div class="Art1">
+
+                                <img src="/Images/img1.jpg" alt="img1">
+                            </div>
+                            <div class="Art2">
+                                <img src="/Images/img2.jpg" alt="img2">
+
+                            </div>
+                            <div class="Art3">
+                                <img src="/Images/img3.jpg" alt="img3">
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="Best5-Painter"></div>
                     <div class="Museum-info"></div>
                 </div>
