@@ -117,11 +117,13 @@ header {
 
 }
 
+/* 간단하게 소개할 컨텐츠들을 묶은 클래스 박스 */
 .Content-Wrap {
     width: 1300px;
     margin: 0 auto;
 }
 
+/* 세계 미술품 중 3개를 대표한 컨텐츠 */
 .Best3-Gallery > h1 {
     color: rgb(72, 72, 72);
     margin: 50px 0 30px;
@@ -132,19 +134,55 @@ header {
 
 .Art-Box {
     display: flex;
+    justify-content: space-between;
 }
-.Art1 > img {
-    margin: 0 30px 0 0;
+.Art1 > a > img {
     width: 400px;
     height: 300px;
 }
-.Art2 > img {
-    margin: 0 30px 0 0;
+.Art2 > a > img {
     width: 400px;
     height: 300px;
 }
-.Art3 > img {
-    margin: 0 30px 0 0;
+.Art3 > a > img {
     width: 400px;
     height: 300px;
 }
+
+/* 세계 화가 중 2명을 대표한 컨텐츠 */
+.Best2-Painter > h1 {
+    color: rgb(72, 72, 72);
+    margin: 50px 0 30px;
+}
+.Best2-Painter > p {
+    margin: 30px 0 20px;
+}
+
+.Painter-Box {
+    display: flex;
+    justify-content: space-between;
+}
+.Painter1 > a > img {
+    width: 620px;
+    height: 450px;
+}
+.Painter2 > a > img {
+    width: 620px;
+    height: 450px;
+}
+
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: #2B211A;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.Left-Footer{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
