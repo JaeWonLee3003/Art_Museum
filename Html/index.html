@@ -13,15 +13,22 @@
         <header>
 
             <div class="menu-wrap">
-                <!--
-                (div>ul.menu.drop>(li>a[href="#"]{$menu}+ul.sub>li*4>a[href="#"]{$menu})*3)*5
-                -->
 
                 <div>
                     <ul class="menu bg_drop">
                         <li>
                             <a href="/Html/index.html">홈</a>
-                            <ul class="sub"></ul>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">최후의 만찬</a>
+                                </li>
+                                <li>
+                                    <a href="#">별이 빛나는 밤</a>
+                                </li>
+                                <li>
+                                    <a href="#">이삭 줍는 여인들</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Art</a>
@@ -74,6 +81,7 @@
         </header>
         <div class="wrap">
             <div class="block"></div>
+            <!-- slideContainer Class Start -->
             <div class="slideContainer">
                 <div class="slideWrap">
                     <ul>
@@ -87,81 +95,86 @@
                         <div class="slide3">
                             <img src="/Images/Slide3.png" alt="slide1">
 
-                        </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- slideContainer Class Start -->
+
+            <!-- Content-Wrap Class Start -->
+            <div class="Content-Wrap">
+                <!-- Best3-Gallery Class Start -->
+                <div class="Best3-Gallery">
+                    <h1>Best 3 Art Gallery</h1>
+                    <p>세계 미술품 중 대표하여 3가지 작품을 표현함.</p>
+                    <div class="Art-Box">
+                        <div class="Art1">
+                            <a href="#">
+                                <img src="/Images/img1.jpg" alt="img1">
+                            </a>
+                            <p>
+                                빈센트 반 고흐의 가장 유명한 작품 중 하나로<br>
+                                &#60;별이 빛나는 빛나는 밤&#62; 이라고 하며 1889년 생<br>
+                                레미의 요양원에서 그렸으며 현재 뉴욕현대미술관 소유다.
+                            </p>
+                        </div>
+                        <div class="Art2">
+                            <a href="#">
+                                <img src="/Images/img2.jpg" alt="img2">
+                            </a>
+                            <p>
+                                장프랑수아 밀레가 1857년에 완성한 유화이다.<br>
+                                현재 프랑스 파리의 오르세 미술관에 소장되어 있다.<br>
+                                수확이 끝난 밀 들판에서 이삭을 줍는 모습이다.<br>
+                                &#60;이삭줍는 여인들&#62; 이라는 작품이다.
+
+                            </p>
+                        </div>
+
+                        <div class="Art3">
+                            <a href="#">
+                                <img src="/Images/img3.jpg" alt="img3">
+                            </a>
+                            <p>
+                                레오나르도 다 빈치의 템페라 벽화에 그려진 &#60;최후의 만찬&#62;<br>
+                                밀라노의 산타 마리아 델레 그라치에 성당에 소장되어 있다.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Content-Wrap Class Start -->
-                <div class="Content-Wrap">
-                    <!-- Best3-Gallery Class -->
-                    <div class="Best3-Gallery">
-                        <h1>Best 3 Art Gallery</h1>
-                        <p>세계 미술품 중 대표하여 3가지 작품을 표현함.</p>
-                        <div class="Art-Box">
-                            <div class="Art1">
-                                <a href="#">
-                                    <img src="/Images/img1.jpg" alt="img1">
-                                </a>
-                                <p>
-                                    빈센트 반 고흐의 가장 유명한 작품 중 하나로<br>
-                                    <별이 빛나는="빛나는" 밤="밤">
-                                        이라고 하며 1889년 생 레미의 요양원에서<br>
-                                        그렸으며 현재 뉴욕현대미술관 소유다.
-                                    </p>
-                                </div>
-                                <div class="Art1">
-                                    <a href="#">
-                                        <img src="/Images/img2.jpg" alt="img2">
-                                    </a>
-                                    <p>
-                                        빈센트 반 고흐의 가장 유명한 작품 중 하나로<br>
-                                        <별이 빛나는="빛나는" 밤="밤">
-                                            이라고 하며 1889년 생 레미의 요양원에서<br>
-                                            그렸으며 현재 뉴욕현대미술관 소유다.
-                                        </p>
-                                    </div>
-                                    <div class="Art1">
-                                        <a href="#">
-                                            <img src="/Images/img3.jpg" alt="img3">
-                                        </a>
-                                        <p>
-                                            빈센트 반 고흐의 가장 유명한 작품 중 하나로<br>
-                                            <별이 빛나는="빛나는" 밤="밤">
-                                                이라고 하며 1889년 생 레미의 요양원에서<br>
-                                                그렸으며 현재 뉴욕현대미술관 소유다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Best2-Painter Class -->
-                                <div class="Best2-Painter">
-                                    <h1>Best 3 Art Painter</h1>
-                                    <p>세계 화가 중 대표하여 2명의 인물을 표현함.</p>
-                                    <div class="Painter-Box">
-                                        <div class="Painter1">
-                                            <a href="#">
-                                                <img src="/Images/Painter1.jpg" alt="img1">
-                                            </a>
-                                        </div>
-                                        <div class="Painter2">
-                                            <a href="#">
-                                                <img src="/Images/Painter2.jpg" alt="img2">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Museum-info"></div>
-                            </div>
-                            <!-- Content-Wrap Class End -->
-
+                <!-- Best2-Painter Class Start -->
+                <div class="Best2-Painter">
+                    <h1>Best 2 Art Painter</h1>
+                    <p>세계 화가 중 대표하여 2명의 인물을 표현함.</p>
+                    <div class="Painter-Box">
+                        <div class="Painter1">
+                            <a href="#">
+                                <img src="/Images/Painter1.jpg" alt="img1">
+                            </a>
+                        </div>
+                        <div class="Painter2">
+                            <a href="#">
+                                <img src="/Images/Painter2.jpg" alt="img2">
+                            </a>
                         </div>
                     </div>
-                    <footer>
-                        <div class="footer-wrap">
-                            <div class="Left-Footer">
-                                <a href="#">GitHub</a>|<a href="#">instagram</a>
-                            </div>
-                        </div>
-                    </footer>
-                </body>
-            </html>
+                </div>
+
+                <div class="Museum-info"></div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <div class="Left-Footer">
+                <div class="Left-Top">
+                    <a href="#">GitHub</a>|<a href="#">instagram</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

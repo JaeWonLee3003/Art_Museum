@@ -12,11 +12,12 @@
     text-decoration: none;
     list-style: none;
     font-family: 'TheJamsil5Bold';
+    color:white;
 
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #232323;
 }
 
 a {
@@ -29,10 +30,8 @@ a {
     margin: 0 auto;
 }
 header {
-    background-color: #ff0000;
     width: 100%;
     height: 80px;
-    opacity: 80%;
     position: fixed;
     display: flex;
 }
@@ -60,7 +59,6 @@ header {
     height: auto;
     line-height: 80px;
     float: left;
-    background: #ff0000;
     transition: 0.5s;
     position: relative;
 }
@@ -69,15 +67,11 @@ header {
     height: 0;
     overflow: hidden;
     transition: 0.5s;
-    background: #ff0000;
-}
-
-.menu li:hover {
-    background: #ff0000;
+    background-color: #232323;
 }
 
 .sub li:hover {
-    background: #3d2d21;
+    background-color: rgb(79, 79, 79);
 }
 
 .bg_drop {
@@ -89,13 +83,13 @@ header {
 }
 
 .bg_drop:hover+.bg {
-    height: 0;
+    height: 240px;
 }
 
 .bg {
     width: 100%;
-    height: 0;
-    background: #2B211A;
+    height: 0px;
+    background: #232323;
     margin-top: 80px;
     transition: 0.5s;
 }
@@ -151,7 +145,7 @@ header {
 
 /* 세계 화가 중 2명을 대표한 컨텐츠 */
 .Best2-Painter > h1 {
-    color: rgb(72, 72, 72);
+    color: white;
     margin: 50px 0 30px;
 }
 .Best2-Painter > p {
