@@ -1,11 +1,29 @@
 @charset "UTF-8";
 /* settings */
+
+/* 잠실 폰트 */
 @font-face {
     font-family: 'TheJamsil5Bold';
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format('woff2');
     font-weight: 700;
     font-style: normal;
 }
+
+/* S 코어 드림 폰트 */
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 프리텐다드 폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +47,9 @@ hr {
 }
 a {
     color: white;
+}
+.lore {
+    font-family: 'Pretendard-Regular';
 }
 
 .wrap {
@@ -115,17 +136,26 @@ header {
     width: 100%;
     height: 80px;
 }
-.slideWrap {
-    height: 720px;
-    overflow: hidden;
-}
-.slideWrap > div {
-    height: 1080px;
-}
-.slideContainer {
-    width: 1920px;
-    height: 720px;
 
+/* 슬라이드 영역을 스타일한 영역 */
+
+.slideshow-container {
+    position: relative;
+    height: 400px;
+}
+
+.slideshow-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-slide.active {
+    opacity: 1;
 }
 
 /* 간단하게 소개할 컨텐츠들을 묶은 클래스 박스 */
@@ -137,6 +167,7 @@ header {
 
 /* 세계 미술품 중 3개를 대표한 컨텐츠 */
 .Best3-Gallery > h1 {
+    font-size: 46px;
     color: White;
     margin: 50px 0 30px;
 }
@@ -148,11 +179,11 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
 .Art1 > a > img {
     width: 400px;
     height: 300px;
 }
-
 .Art2 > a > img {
     width: 400px;
     height: 300px;
@@ -166,6 +197,7 @@ header {
 .Best2-Painter > h1 {
     color: white;
     margin: 50px 0 30px;
+    font-size: 46px;
 }
 .Best2-Painter > p {
     margin: 30px 0 20px;
@@ -184,6 +216,8 @@ header {
     height: 450px;
 }
 
+/* Museum 컨텐츠 시작 */
+
 .Museum-Info {
     width: 100%;
     height: 1500px;
@@ -191,52 +225,52 @@ header {
 .Museum1-Wrap {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 .Museum1-Img {
     width: 50%;
     height: 100%;
 }
-.Museum1-Info{
+.Museum1-Info {
     background-color: #444444;
     width: 50%;
     height: 100%;
-    
+
 }
 
 .Museum2-Wrap {
     display: flex;
     width: 100%;
-    height: 500px;
-    margin: 50px 0px 50px 0px;
+    height: 400px;
+    margin: 50px 0;
 }
 .Museum2-Img {
     background-color: gray;
     width: 50%;
     height: 100%;
 }
-.Museum2-Info{
+.Museum2-Info {
     background-color: gray;
     width: 50%;
     height: 100%;
-    
+
 }
 .Museum3-Wrap {
     display: flex;
     width: 100%;
     background-color: orange;
-    height: 500px;
+    height: 400px;
 }
 .Museum3-Img {
     background-color: gray;
     width: 50%;
     height: 100%;
 }
-.Museum3-Info{
+.Museum3-Info {
     background-color: gray;
     width: 50%;
     height: 100%;
-    
+
 }
 
 footer {

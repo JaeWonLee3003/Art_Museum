@@ -1,36 +1,9 @@
-$(document).ready(function () {
-    $("nav .lv1").mouseenter(function () {
+const slides = document.querySelectorAll('.slideshow-slide');
+let currentSlide = 0;
+const slideInterval = setInterval(nextSlide, 3000);
 
-        $(this).find("ul,lv2").stop().slideDown();
-
-    })
-    $("nav ul .lv1").mouseleave(function () {
-
-        $(".lv2").stop().slideUp();
-
-    })
-    $(".notice li:nth-child(1)").click(function () {
-
-        $(".popUpbox").show();
-
-    })
-    $(".popUpBox button").click(function () {
-
-        $(".popUpbox").hide();
-
-    })
-    // tap 
-    $(".tapMenu li").click(function () {
-        var id=$(this).index()
-
-        $(".tapItem >*").hide(),removeClass("on");
-        $(".tapItem >*").eq(idx),show(),addClass("on");
-        
-        $(".tapMenu li").removeClass("on");
-        $(this).addClass('on')
-
-    })
-
-
-
-});
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
