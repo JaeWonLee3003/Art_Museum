@@ -6,13 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>세계 미술 박물관 사이트</title>
         <link rel="stylesheet" href="/Css/style.css">
-        <script src="/JavaScript/script.js"></script>
+        
     </head>
     <body>
         <header>
-
             <div class="menu-wrap">
-
                 <ul class="menu bg_drop">
                     <li>
                         <a href="/Html/index.html" class="menu_hover">홈</a>
@@ -61,24 +59,22 @@
                         </ul>
                     </li>
                 </ul>
-
             </div>
-
         </header>
         <div class="wrap">
             <div class="block"></div>
             <!-- slide Class Start -->
-            <div class="slideshow-container">
-                <div class="slideshow-slide">
-                    <img src="/Images/Slide/Slide1.png" alt="이미지1">
+            <div class="slider">
+                <div class="slide active">
+                  <img src="/Images/Slide/SlideOne.jpg" alt="Slide 1">
                 </div>
-                <div class="slideshow-slide">
-                    <img src="/Images/Slide/Slide1.png" alt="이미지2">
+                <div class="slide">
+                  <img src="/Images/Slide/SlideTwo.jpg" alt="Slide 2">
                 </div>
-                <div class="slideshow-slide">
-                    <img src="/Images/Slide/Slide1.png" alt="이미지3">
+                <div class="slide">
+                  <img src="/Images/Slide/SlideOne.jpg" alt="Slide 3">
                 </div>
-            </div>
+              </div>
 
             <!-- Content-Wrap Class Start -->
             <div class="Content-Wrap">
@@ -248,6 +244,28 @@
 
     </div>
 </div>
+<script>
+    // JavaScript 코드 추가
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+    
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+    
+    setInterval(nextSlide, 3000); // 3초마다 다음 슬라이드로 전환
+</script>
 </body>
 </head>
 </html>

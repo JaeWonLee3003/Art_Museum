@@ -60,13 +60,8 @@ a {
 header {
     width: 100%;
     height: 80px;
-    position: fixed;
+    position: absolute;
     display: flex;
-}
-.Logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .menu-wrap {
@@ -77,19 +72,15 @@ header {
     width: 100%;
     height: 500px;
     text-align: center;
-    float: left;
     position: relative;
 }
 
 .menu {
-    display: inline-block;
-    position: relative;
     z-index: 1;
 }
 
 .menu li {
     width: 200px;
-    height: auto;
     line-height: 80px;
     float: left;
     transition: 0.5s;
@@ -114,6 +105,12 @@ header {
     height: 40px;
 }
 .sub > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_drop > li > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,23 +141,31 @@ header {
 
 /* 슬라이드 영역을 스타일한 영역 */
 
-.slideshow-container {
-    position: relative;
+.slider {
+    width: 100%;
     height: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
-.slideshow-slide {
+.slide {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s;
 }
 
-.slideshow-slide.active {
+.slide.active {
     opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* 간단하게 소개할 컨텐츠들을 묶은 클래스 박스 */
@@ -227,28 +232,34 @@ header {
     width: 100%;
     height: 1500px;
 }
-.Museum1-Wrap , .Museum2-Wrap , .Museum3-Wrap {
+.Museum1-Wrap,
+.Museum2-Wrap,
+.Museum3-Wrap {
     display: flex;
     width: 100%;
     height: 400px;
 }
-.Museum1-Img , .Museum2-Img , .Museum3-Img {
+.Museum1-Img,
+.Museum2-Img,
+.Museum3-Img {
     width: 50%;
     height: 100%;
 }
-.Museum1-Info , .Museum2-Info , .Museum3-Info {
+.Museum1-Info,
+.Museum2-Info,
+.Museum3-Info {
     background-color: #444444;
     width: 50%;
     height: 100%;
 
 }
-.Museum1-Info , .Museum2-Info , .Museum3-Info >p{
+.Museum1-Info,
+.Museum2-Info,
+.Museum3-Info > p {
     font-size: 14.5px;
     margin: 10px;
 
 }
-
-
 
 footer {
     width: 100%;
