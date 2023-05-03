@@ -158,6 +158,11 @@ header {
   .img.on {
     display: block;
   }
+
+  .Content-Wrap{
+    width: 80%;
+    margin: 0 auto;
+  }
 /* 세계 미술품 중 3개를 대표한 컨텐츠 */
 .Best3-Gallery > h1 {
     font-size: 46px;
