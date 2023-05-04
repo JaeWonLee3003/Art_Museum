@@ -16,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /* 프리텐다드 폰트 */
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -33,21 +34,27 @@
     color: white;
 
 }
+
 h1 {
     margin: 10px 0 0;
 }
+
 h3 {
     margin: 10px 0 0;
 }
+
 body {
     background-color: #232323;
 }
+
 hr {
     margin: 10px 0 20px;
 }
+
 a {
     color: white;
 }
+
 .lore {
     font-family: 'Pretendard-Regular';
 }
@@ -57,6 +64,7 @@ a {
     height: 2000px;
     margin: 0 auto;
 }
+
 header {
     width: 100%;
     height: 80px;
@@ -68,7 +76,7 @@ header {
     width: 100%;
 }
 
-.menu-wrap > div {
+.menu-wrap>div {
     width: 100%;
     height: 500px;
     text-align: center;
@@ -86,9 +94,11 @@ header {
     transition: 0.5s;
     position: relative;
 }
+
 .menu_hover:hover {
     background-color: #232323;
 }
+
 .sub li {
     height: 0;
     overflow: hidden;
@@ -100,26 +110,28 @@ header {
     background-color: rgb(79, 79, 79);
 }
 
-.sub li > a > img {
+.sub li>a>img {
     width: 40px;
     height: 40px;
 }
-.sub > li > a {
+
+.sub>li>a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bg_drop > li > a {
+.bg_drop>li>a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .bg_drop {
     float: right;
 }
 
-.bg_drop:hover > li .sub li {
+.bg_drop:hover>li .sub li {
     height: 80px;
 }
 
@@ -145,31 +157,33 @@ header {
     overflow: hidden;
     z-index: -1;
     background-color: #000;
-  }
-  
+}
 
-  .img {
+
+.img {
     display: none;
     width: 100%;
     height: 600px;
     opacity: 0.6;
-  }
-  
-  .img.on {
-    display: block;
-  }
+}
 
-  .Content-Wrap{
+.img.on {
+    display: block;
+}
+
+.Content-Wrap {
     width: 80%;
     margin: 0 auto;
-  }
+}
+
 /* 세계 미술품 중 3개를 대표한 컨텐츠 */
-.Best3-Gallery > h1 {
+.Best3-Gallery>h1 {
     font-size: 46px;
     color: White;
     margin: 50px 0 30px;
 }
-.Best3-Gallery > p {
+
+.Best3-Gallery>p {
     margin: 30px 0 20px;
 }
 
@@ -178,38 +192,43 @@ header {
     justify-content: space-between;
 }
 
-.Art1 > a > img {
+.Art1>a>img {
     width: 400px;
     height: 300px;
 }
-.Art2 > a > img {
+
+.Art2>a>img {
     width: 400px;
     height: 300px;
 }
-.Art3 > a > img {
+
+.Art3>a>img {
     width: 400px;
     height: 300px;
 }
 
 /* 세계 화가 중 2명을 대표한 컨텐츠 */
-.Best2-Painter > h1 {
+.Best2-Painter>h1 {
     color: white;
     margin: 50px 0 30px;
     font-size: 46px;
 }
-.Best2-Painter > p {
+
+.Best2-Painter>p {
     margin: 30px 0 20px;
 }
 
 .Painter-Box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.Painter1 > a > img {
+
+.Painter1>a>img {
     width: 620px;
     height: 450px;
 }
-.Painter2 > a > img {
+
+.Painter2>a>img {
     width: 620px;
     height: 450px;
 }
@@ -220,19 +239,31 @@ header {
     width: 100%;
     height: 1500px;
 }
+
 .Museum1-Wrap,
 .Museum2-Wrap,
 .Museum3-Wrap {
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 400px;
 }
+
 .Museum1-Img,
 .Museum2-Img,
 .Museum3-Img {
     width: 50%;
     height: 100%;
+    opacity: 0.4;
+    transition: 0.3s;
 }
+
+.Museum1-Img:hover,
+.Museum2-Img:hover,
+.Museum3-Img:hover {
+    opacity: 1;
+}
+
 .Museum1-Info,
 .Museum2-Info,
 .Museum3-Info {
@@ -241,12 +272,18 @@ header {
     height: 100%;
 
 }
+
 .Museum1-Info,
 .Museum2-Info,
-.Museum3-Info > p {
+.Museum3-Info>p {
     font-size: 14.5px;
-    margin: 10px;
+}
 
+.Museum1-Info p,
+.Museum2-Info p,
+.Museum3-Info p {
+    margin-left: 20px;
+    margin-top:20px;
 }
 
 footer {
@@ -257,6 +294,7 @@ footer {
     justify-content: space-between;
     color: white;
 }
+
 .Left-Footer {
     width: 300px;
     display: flex;
