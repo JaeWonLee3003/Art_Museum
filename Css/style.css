@@ -72,16 +72,21 @@ header {
     display: flex;
 }
 
-.menu-wrap {
-    width: 100%;
-}
-
-.menu-wrap>div {
-    width: 100%;
-    height: 500px;
-    text-align: center;
+.Logo{
+    height: 80px;
+    width: 200px;
     position: relative;
 }
+.Logo > a{
+    font-size: 30px;
+}
+.menu-wrap {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
 
 .menu {
     z-index: 1;
@@ -95,9 +100,7 @@ header {
     position: relative;
 }
 
-.menu_hover:hover {
-    background-color: #232323;
-}
+
 
 .sub li {
     height: 0;
@@ -189,20 +192,33 @@ header {
 
 .Art-Box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.Art1>a>img {
+
+
+.Art1 > a > img {
     width: 400px;
     height: 300px;
 }
-
-.Art2>a>img {
+.Art2 > a > img {
     width: 400px;
     height: 300px;
 }
-
-.Art3>a>img {
+.Art3 > a > img {
+    width: 400px;
+    height: 300px;
+}
+.Art4 > a > img {
+    width: 400px;
+    height: 300px;
+}
+.Art5 > a > img {
+    width: 400px;
+    height: 300px;
+}
+.Art6 > a > img {
     width: 400px;
     height: 300px;
 }
@@ -237,7 +253,7 @@ header {
 
 .Museum-Info {
     width: 100%;
-    height: 1500px;
+    height: 1200px;
 }
 
 .Museum1-Wrap,
@@ -276,7 +292,7 @@ header {
 .Museum1-Info,
 .Museum2-Info,
 .Museum3-Info>p {
-    font-size: 14.5px;
+    font-size: 15.5px;
 }
 
 .Museum1-Info p,
@@ -289,14 +305,15 @@ header {
 footer {
     width: 100%;
     height: 180px;
-    background-color: #2B211A;
+    background-color: #444444;
     display: flex;
     justify-content: space-between;
     color: white;
+    margin: 100px 0px;
 }
 
 .Left-Footer {
     width: 300px;
     display: flex;
     justify-content: space-between;
-}
+}  
