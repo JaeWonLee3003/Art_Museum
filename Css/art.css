@@ -61,7 +61,7 @@ a {
 
 .wrap {
     width: 1920px;
-    height: 2000px;
+    height: 1450px;
     margin: 0 auto;
 }
 
@@ -78,7 +78,9 @@ header {
     position: relative;
 }
 .Logo > a{
-    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 25px;
 }
 .menu-wrap {
     display: flex;
